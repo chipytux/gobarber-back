@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1605666901230" clover="3.2.0">
+  <project timestamp="1605666901231" name="All files">
+    <metrics statements="62" coveredstatements="61" conditionals="4" coveredconditionals="3" methods="12" coveredmethods="11" elements="78" coveredelements="75" complexity="0" loc="62" ncloc="62" packages="5" files="5" classes="5"/>
+    <package name="modules.appointments.infra.typeorm.entities">
+      <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="Appointment.ts" path="/home/douglas/gobarber-back/src/modules/appointments/infra/typeorm/entities/Appointment.ts">
+        <metrics statements="12" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.appointments.repositories.fake">
+      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="FakeAppointmentsRepository.ts" path="/home/douglas/gobarber-back/src/modules/appointments/repositories/fake/FakeAppointmentsRepository.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.appointments.services">
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="CreateAppointmetService.ts" path="/home/douglas/gobarber-back/src/modules/appointments/services/CreateAppointmetService.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.users.infra.typeorm.entities">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="User.ts" path="/home/douglas/gobarber-back/src/modules/users/infra/typeorm/entities/User.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="shared.errors">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="AppError.ts" path="/home/douglas/gobarber-back/src/shared/errors/AppError.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
