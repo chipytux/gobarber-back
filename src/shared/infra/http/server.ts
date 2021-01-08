@@ -26,7 +26,7 @@ app.use(
     if (error.statuscode) {
       return response.status(error.statuscode).json({ message: error.message });
     }
-    return response.status(500).json({ message: error.message });
+    return response.status(500).json(error);
   },
 );
 
