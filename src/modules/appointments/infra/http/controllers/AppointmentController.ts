@@ -1,5 +1,4 @@
 import { container } from 'tsyringe';
-import { parseISO } from 'date-fns';
 import CreateAppointmentService from '@modules/appointments/services/CreateAppointmetService';
 
 import { Request, Response } from 'express';

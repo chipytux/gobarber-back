@@ -2,6 +2,7 @@ import User from '@modules/users/infra/typeorm/entities/User';
 import { inject, injectable } from 'tsyringe';
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
+import { classToClass } from 'class-transformer';
 
 interface IRequest {
   user_id: string;
@@ -21,13 +22,17 @@ export default class ListProvidersService {
       `provider-list:${user_id}`,
     );
 
-    if (!users) {
-      users = await this.userRepository.findAllProviders({
-        except_user_id: user_id,
-      });
-      this.cacheProvider.save<User[]>(`provider-list:${user_id}`, users);
+    if (users) {
+      return users;
     }
 
+    users = await this.userRepository.findAllProviders({
+      except_user_id: user_id,
+    });
+    this.cacheProvider.save<User[]>(
+      `provider-list:${user_id}`,
+      classToClass(users),
+    );
     return users;
   }
 }
