@@ -42,7 +42,6 @@ export default class AuthenticateUserService {
     }
     const { secret, expiresIn } = Auth.jwt;
     const token = sign({}, secret, { subject: user.id, expiresIn });
-    user.password = '******';
     return { user, token };
   }
 }

@@ -1,20 +1,26 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-
 import 'reflect-metadata';
+import 'dotenv/config';
+
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import routes from '@shared/infra/http/routes';
 import AppError from '@shared/errors/AppError';
 import uploadConfig from '@config/Upload';
+import { errors } from 'celebrate';
 
 import '@shared/infra/typeorm/';
 import '@shared/container';
+import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(rateLimiter);
 app.use(routes);
 app.use('/files', express.static(uploadConfig.uploadFolder));
+
+app.use(errors());
 
 app.use(
   (
