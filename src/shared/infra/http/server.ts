@@ -16,9 +16,9 @@ import rateLimiter from './middlewares/rateLimiter';
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use('/files', express.static(uploadConfig.uploadFolder));
 app.use(rateLimiter);
 app.use(routes);
-app.use('/files', express.static(uploadConfig.uploadFolder));
 
 app.use(errors());
 
@@ -29,6 +29,7 @@ app.use(
     response: Response,
     next: NextFunction,
   ): Response<void> => {
+    console.log(error);
     if (error.statuscode) {
       return response.status(error.statuscode).json({ message: error.message });
     }
