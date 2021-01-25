@@ -37,6 +37,6 @@ app.use(
   },
 );
 
-app.listen(3333, () => {
+app.listen({ host: '0.0.0.0', port: 3333 }, () => {
   console.info('Server start on 3333');
 });
